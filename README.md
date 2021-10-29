@@ -51,7 +51,7 @@ Required **Python** version: `3.8` or above.
 
 # Installation
 
-1. Clone repo: `git clone https://github.com/Mousatat/ComputationalPracticum.git`
+1. Clone repo: `git clone https://github.com/Mousatat/ComputationalPracticum-Mousatat.git`
 2. Open the directory: `cd ComputationalPracticum/`
 3. Install requirements: `pip install -r requirements.txt`
 4. Open the application directory: `cd app/`
