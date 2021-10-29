@@ -1,0 +1,84 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.tabs {
+  border: 1px solid lightgray;
+  height: 500px;
+  width: 650px;
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  background: #f8f8f8;
+  margin: 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.tabs__link {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.tabs__link_active {
+  background: lightgray;
+  cursor: default;
+}
+
+.tabs__link:not(.tabs__link_active):hover,
+.tabs__link:not(.tabs__link_active):focus {
+  background-color: #efefef;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.horizontal_div {
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: start;
+}
+
+.fields {
+  margin: 24px;
+}
+
+.fields_label {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.fields_param {
+  display: block;
+  border: none;
+  background: rgba(150, 150, 150, .5);
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+  outline: none;
+  width: 90%;
+  font-size: 16px;
+}
+
+.fields_param_div {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  width: fit-content;
+}
+
+.btn_update {
+  margin-top: 16px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="eel.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Computational Practicum</title>
+</head>
+<body>
+  <div class="horizontal_div">
+    <div class="tabs">
+      <div class="tabs__nav">
+        <a class="tabs__link tabs__link_active" id="1">Page 1</a>
+        <a class="tabs__link" id="2">Page 2</a>
+        <a class="tabs__link" id="3">Page 3</a>
+      </div>
+      <div class="tabs__content">
+          <img id="graph" src="img/graph.png"/>
+      </div>
+    </div>
+    <div class="fields">
+      <div class="fields_list">
+        <fieldset id="field_set">
+          <legend>Parameters</legend>
+          <div class="fields_param_div">
+            <label class="fields_label" for="x0_field">x0:</label>
+            <input class="fields_param" id="x0_field" type="number" placeholder="Enter x0:" required="">
+          </div>
+          <div class="fields_param_div">
+            <label class="fields_label" for="X_field">X:</label>
+            <input class="fields_param" id="X_field" type="number" placeholder="Enter X:" required="">
+          </div>
+          <div class="fields_param_div">
+            <label class="fields_label" for="y0_field">y0:</label>
+            <input class="fields_param" id="y0_field" type="number" placeholder="Enter y0:" required="">
+          </div>
+          <div class="fields_param_div">
+            <label class="fields_label" for="steps_field">steps:</label>
+            <input class="fields_param" id="steps_field" type="number" placeholder="Enter steps:" required="">
+          </div>
+        </fieldset>
+        <fieldset id="visibility_set">
+          <legend>Visibility</legend>
+          <div>
+            <input type="checkbox" id="exact" name="interest" value="exact" checked>
+            <label for="exact">Y exact</label>
+          </div>
+          <div>
+            <input type="checkbox" id="euler" name="interest" value="euler" checked>
+            <label for="euler">Y Euler</label>
+          </div>
+          <div>
+            <input type="checkbox" id="improved" name="interest" value="improved" checked>
+            <label for="improved">Y Improved Euler</label>
+          </div>
+          <div>
+            <input type="checkbox" id="runge_kutta" name="interest" value="runge_kutta" checked>
+            <label for="runge_kutta">Y Runge Kutta</label>
+          </div>
+        </fieldset>
+      </div>
+      <button id="btn_update" class="btn_update" onclick="btnUpdate()">Update</button>
+    </div>
+  </div>
+  <script src="js/tabs.js"></script>
+  <script src="js/controller.js"></script>
+</body>
+</html>
